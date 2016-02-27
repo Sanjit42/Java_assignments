@@ -5,13 +5,23 @@ import org.junit.Test;
 
 public class MatrixTest{
    @Test
-   public void find_nullvalue(){
-      int [] value = {1};
+   public void find_zero_when_do_not_give_any_value(){
+      int [] value = {};
       Matrix matrix = Matrix.createMatrix(2, 2, value);
       assertEquals(0, matrix.getValue(0, 1));
       assertEquals(0, matrix.getValue(1, 1));
-      assertEquals(1, matrix.getValue(0, 0));
+      assertEquals(0, matrix.getValue(0, 0));
    }
+
+   @Test
+   public void get_zero_every_positions_except_1st_position_when_give_only_one_number(){
+      int [] value = {2};
+      Matrix matrix = Matrix.createMatrix(2, 2, value);
+      assertEquals(0, matrix.getValue(1, 0));
+      assertEquals(0, matrix.getValue(1, 1));
+      assertEquals(2, matrix.getValue(0, 0));
+   }
+
    @Test
    public void find_position_value(){
       int []first_matrix = {1,2,3,4,5,6,7,8,9};
@@ -56,6 +66,8 @@ public class MatrixTest{
 
       Matrix addition = matrix1.add(matrix2);
       int[] expected = {9,4,6,18,10,121};
+
+      assertEquals(6, addition.getValue(0, 2));
       assertTrue(!addition.isEqualTo(expected));
    }
    @Test
@@ -67,18 +79,32 @@ public class MatrixTest{
 
       Matrix addition = matrix1.add(matrix2);
       int[] expected = {9,4,6,18,10,121};
+
+      assertEquals(9, addition.getValue(0, 0));
       assertTrue(!addition.isEqualTo(expected));
    }
 
    @Test
-   public void create_matrix_with_values(){
-      int []first_matrix = {-1,2,3,4};
+   public void matrix_with_values(){
+      int []first_matrix = {1,2,3,4};
       int[] second_matrix = {2,3,4,5};
       Matrix matrix1 = Matrix.createMatrix(2, 2, first_matrix);
       Matrix matrix2 = Matrix.createMatrix(2, 2, second_matrix);
 
-      Matrix addition = matrix1.multiply(matrix2);
-      int[] expected = {10, 8, 20, 26};
-      assertTrue(addition.isEqualTo(expected));
+      Matrix multiply = matrix1.multiply(matrix2);
+      int[] expected = {10, 13, 22, 29};
+
+      assertEquals(10, multiply.getValue(0, 0));
+      assertTrue(multiply.isEqualTo(expected));
+   }
+
+   @Test
+   public void determinant_provides_the_determinant_of_a_3_by_3_matrix(){
+      int [] value = {1,2,3,4,5,6,7,8,9};
+      Matrix matrix = Matrix.createMatrix(3, 3, value);
+      int determinant = matrix.determinant();
+
+      int expected = -48;
+      assertEquals(expected, determinant);
    }
 }
