@@ -1,6 +1,3 @@
-/**
- * Created by sanjitd on 27/02/16.
- */
 public class LineScanner implements Scanner {
     private int count;
 
