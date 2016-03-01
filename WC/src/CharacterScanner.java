@@ -1,6 +1,3 @@
-/**
- * Created by dataanjitd on 27/02/16.
- */
 public class CharacterScanner implements Scanner {
     private int count;
 
