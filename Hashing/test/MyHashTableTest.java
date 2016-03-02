@@ -31,7 +31,6 @@ public class MyHashTableTest {
         MyHashTable myHashTable = new MyHashTable(3);
         myHashTable.put("West Bengal", "Kolkata");
         myHashTable.put("Karnataka", "Bangalore");
-        myHashTable.put("Andhraprodesh", "Hyderabad");
 
         assertTrue(myHashTable.isPresent("Karnataka"));
     }
@@ -42,7 +41,21 @@ public class MyHashTableTest {
         myHashTable.put("West Bengal", "Kolkata");
         myHashTable.put("Maharastra", "Mumbai");
         myHashTable.put("Karnataka", "Bangalore");
+        assertFalse(myHashTable.isPresent("ABC"));
+        assertFalse((myHashTable.isPresent("Karnat")));
+
+    }
+    @Test
+    public void testremove_should_remove_given_key_from_table(){
+        MyHashTable myHashTable = new MyHashTable(4);
+        myHashTable.put("Karnataka", "Bangalore");
+        myHashTable.put("West Bengal", "Kolkata");
+
+        assertEquals(2, myHashTable.getLength());
         assertTrue(myHashTable.isPresent("Karnataka"));
+        myHashTable.remove("West Bengal");
+        assertEquals(1, myHashTable.getLength());
+        assertFalse(myHashTable.isPresent("West Bengal"));
     }
 
     @Test

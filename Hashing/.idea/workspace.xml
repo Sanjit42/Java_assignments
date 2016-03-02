@@ -14,7 +14,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Hashing$MyHashTableTest.coverage" NAME="MyHashTableTest Coverage Results" MODIFIED="1456858027494" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Hashing$MyHashTableTest.coverage" NAME="MyHashTableTest Coverage Results" MODIFIED="1456900247922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -25,24 +25,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MyHashTable.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyHashTable.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MyHashTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="75" column="2" selection-start-line="75" selection-start-column="2" selection-end-line="75" selection-end-column="2" />
-              <folding />
+            <state vertical-scroll-proportion="-0.8068834">
+              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+              <folding>
+                <element signature="e#2281#2282#0" expanded="true" />
+                <element signature="e#2310#2311#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyHashTableTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyHashTableTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/MyHashTableTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22562142">
-              <caret line="44" column="55" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1456858168000" expanded="true" signature="1671:2095" placeholder="..." />
+                <marker date="1456899887000" expanded="true" signature="2164:2588" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -53,8 +56,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -68,8 +71,9 @@
       <list>
         <option value="$PROJECT_DIR$/test/HashTest.java" />
         <option value="$PROJECT_DIR$/src/Hash.java" />
-        <option value="$PROJECT_DIR$/src/MyHashTable.java" />
+        <option value="$PROJECT_DIR$/src/s.java" />
         <option value="$PROJECT_DIR$/test/MyHashTableTest.java" />
+        <option value="$PROJECT_DIR$/src/MyHashTable.java" />
       </list>
     </option>
   </component>
@@ -171,6 +175,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/sanjitd/projects/Java_assignments/Hashing/src/s.java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -181,42 +186,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.MyHashTableTest">
-    <configuration default="false" name="MyHashTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="MyHashTable" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Hashing" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="MyHashTableTeat" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Hashing" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyHashTableTeat" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="MyHashTableTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Hashing" />
@@ -246,6 +215,69 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyHashTableTest" />
       <option name="METHOD_NAME" value="test_remove_all_value_from_the_table" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MyHashTableTest.test_isPresent_return_true_if_given_key_is_present_in_the_table" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Hashing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyHashTableTest" />
+      <option name="METHOD_NAME" value="test_isPresent_return_true_if_given_key_is_present_in_the_table" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MyHashTableTest.test_isPresent_return_false_if_given_key_not_present_in_the_table" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Hashing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyHashTableTest" />
+      <option name="METHOD_NAME" value="test_isPresent_return_false_if_given_key_not_present_in_the_table" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MyHashTableTest.testremove_should_remove_given_key_from_table" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Hashing" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyHashTableTest" />
+      <option name="METHOD_NAME" value="testremove_should_remove_given_key_from_table" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -515,18 +547,20 @@
       <listeners />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Application.MyHashTable" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MyHashTableTeat" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MyHashTableTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MyHashTableTest.test_remove_all_value_from_the_table" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.MyHashTableTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MyHashTableTest.test_remove_all_value_from_the_table" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MyHashTableTest.test_isPresent_return_true_if_given_key_is_present_in_the_table" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MyHashTableTest.test_isPresent_return_false_if_given_key_not_present_in_the_table" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MyHashTableTest.testremove_should_remove_given_key_from_table" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.MyHashTableTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MyHashTableTest.test_remove_all_value_from_the_table" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MyHashTable" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MyHashTableTeat" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MyHashTableTest.testremove_should_remove_given_key_from_table" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MyHashTableTest.test_isPresent_return_false_if_given_key_not_present_in_the_table" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MyHashTableTest.test_isPresent_return_true_if_given_key_is_present_in_the_table" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MyHashTableTest.test_remove_all_value_from_the_table" />
       </list>
     </recent_temporary>
   </component>
@@ -541,40 +575,40 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyHashTableTest - 2016.03.01 at 23h 52m 34s.xml">
+    <history-entry file="MyHashTableTest - 2016.03.02 at 11h 54m 37s.xml">
       <configuration name="MyHashTableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyHashTableTest - 2016.03.02 at 00h 01m 19s.xml">
+    <history-entry file="MyHashTableTest - 2016.03.02 at 11h 54m 49s.xml">
       <configuration name="MyHashTableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyHashTableTest - 2016.03.02 at 00h 10m 51s.xml">
+    <history-entry file="MyHashTableTest - 2016.03.02 at 11h 55m 10s.xml">
       <configuration name="MyHashTableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyHashTableTest - 2016.03.02 at 00h 11m 07s.xml">
+    <history-entry file="MyHashTableTest - 2016.03.02 at 11h 58m 24s.xml">
       <configuration name="MyHashTableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyHashTableTest - 2016.03.02 at 00h 13m 00s.xml">
+    <history-entry file="MyHashTableTest - 2016.03.02 at 11h 58m 52s.xml">
       <configuration name="MyHashTableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyHashTableTest - 2016.03.02 at 00h 13m 25s.xml">
+    <history-entry file="MyHashTableTest - 2016.03.02 at 11h 59m 06s.xml">
       <configuration name="MyHashTableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyHashTableTest - 2016.03.02 at 00h 17m 01s.xml">
+    <history-entry file="MyHashTableTest - 2016.03.02 at 11h 59m 51s.xml">
       <configuration name="MyHashTableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyHashTableTest - 2016.03.02 at 00h 17m 08s.xml">
+    <history-entry file="MyHashTableTest - 2016.03.02 at 12h 00m 49s.xml">
       <configuration name="MyHashTableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyHashTableTest - 2016.03.02 at 00h 18m 10s.xml">
+    <history-entry file="MyHashTableTest - 2016.03.02 at 12h 02m 43s.xml">
       <configuration name="MyHashTableTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MyHashTableTest_test_remove_all_value_from_the_table - 2016.03.02 at 00h 16m 51s.xml">
-      <configuration name="MyHashTableTest.test_remove_all_value_from_the_table" configurationId="JUnit" />
+    <history-entry file="MyHashTableTest - 2016.03.02 at 12h 03m 47s.xml">
+      <configuration name="MyHashTableTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="940" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -583,7 +617,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296837" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296837" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -643,7 +677,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-          <folding />
+          <folding>
+            <element signature="e#2281#2282#0" expanded="true" />
+            <element signature="e#2310#2311#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -651,7 +688,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2281#2282#0" expanded="true" />
+            <element signature="e#2310#2311#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -659,7 +699,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2281#2282#0" expanded="true" />
+            <element signature="e#2310#2311#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -667,7 +710,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#2281#2282#0" expanded="true" />
+            <element signature="e#2310#2311#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -675,25 +721,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/MyHashTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="75" column="2" selection-start-line="75" selection-start-column="2" selection-end-line="75" selection-end-column="2" />
-          <folding />
+          <folding>
+            <element signature="e#2281#2282#0" expanded="true" />
+            <element signature="e#2310#2311#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/MyHashTableTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22562142">
-          <caret line="44" column="55" selection-start-line="44" selection-start-column="55" selection-end-line="44" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1456858168000" expanded="true" signature="1671:2095" placeholder="..." />
+            <marker date="1456899887000" expanded="true" signature="2164:2588" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MyHashTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.8068834">
+          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+          <folding>
+            <element signature="e#2281#2282#0" expanded="true" />
+            <element signature="e#2310#2311#0" expanded="true" />
           </folding>
         </state>
       </provider>

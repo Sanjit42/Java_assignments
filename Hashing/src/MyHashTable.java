@@ -6,40 +6,44 @@ public class MyHashTable {
     private Object[] keys;
 
     private int length = 0;
-    private int boundry;
+    private int boundary;
 
     public MyHashTable(int size) {
         values = (size % 2 == 0) ? new Object[size + 1] : new Object[size];
         keys = (size % 2 == 0) ? new Object[size + 1] : new Object[size];
         length = 0;
-        boundry = size;
+        boundary = size;
     }
 
-    private long hash(String keys) {
+    private Object hash(String keys) {
         long hash = 7;
         for (int i = 0; i < keys.length(); i++) {
-            hash = (hash * 31 + keys.charAt(i)) % boundry;
+            hash = (hash * 31 + keys.charAt(i)) % boundary;
         }
-        return (int) (Math.abs(hash) % boundry);
+        return (int) (Math.abs(hash) % boundary);
     }
 
-    public void put(String key, Object value) {
+    public void put(String key, Object value){
         length++;
         int index = (int) (int) hash(key);
-        if (values[index] == null) {
+
+        if(values[index] == null){
             values[index] = value;
             keys[index] = key;
             return;
         }
         ArrayList innerValues = new ArrayList();
         ArrayList innerKeys = new ArrayList();
-        if (!(values[index] instanceof ArrayList)) {
+
+        if(!(values[index] instanceof ArrayList)){
+
             innerValues.add(values[index]);
-            innerValues.add(keys[index]);
+            innerKeys.add(keys[index]);
 
             values[index] = innerValues;
             keys[index] = innerKeys;
         }
+
         innerValues.add(value);
         innerKeys.add(key);
     }
@@ -52,13 +56,26 @@ public class MyHashTable {
         return values[index];
     }
 
+    public void remove(String key){
+        length--;
+        int index = (int) (int) hash(key);
+        if(values[index] instanceof ArrayList){
+            int removeItem = ((ArrayList)keys[index]).indexOf(key);
+            ((ArrayList)keys[index]).remove(removeItem);
+            ((ArrayList)values[index]).remove(removeItem);
+        }
+        keys[index] = null;
+        values[index] = null;
+    };
+
+
     public boolean isPresent(String key) {
         int index = (int) (int) hash(key);
         return ((keys[index]) != null);
     }
 
     public void removeAll(){
-        for (int i = 0; i < boundry ; i++){
+        for (int i = 0; i < boundary; i++){
             keys[i] = null;
             values[i] = null;
             length = 0;
@@ -68,10 +85,4 @@ public class MyHashTable {
     public int getLength() {
         return length;
     }
-
-        public void print() {
-        for (int i = 0; i < keys.length; i++) {
-            System.out.println(keys[i] + " " + values[i]);
-        }
- }
 }
