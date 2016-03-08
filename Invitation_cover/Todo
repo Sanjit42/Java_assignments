@@ -24,7 +24,27 @@ $ java labelPrinter --firstLast record.txt
     Mr Sarojit Das
     Ms Banti Sarkar 
 $ java labelPrinter -f record.txt
+    Mr Das, Sarojit
+--------------------------------------------------------
+$ cat records.txt
+    Sarojit,Das,male,23,kolkata,WB,India
+    Banti,Sarkar,female,20,barasat,WB,India
 
+$ java labelPrinter print casual format with country.
+    Mr Sarojit Das, India.
+    Ms Banti Sarkar, India.
+$ java labelPrinter print formal format with country.
+    Mr Das, Sarojit, India.
+-------------------------------------------------------
+$ cat records.txt
+    Sarojit,Das,male,23,kolkata,WB,India
+    Banti,Sarkar,female,20,barasat,WB,India
+
+$ java labelPrinter print casual format with country.
+    Mr Sarojit Das, India, 23.
+    Ms Banti Sarkar, India, 20.
+$ java labelPrinter print formal format country and age.
+    Mr Das, Sarojit, India, 23.
 entity:-
     recognising Guest as an entity:-
         firstName,lastName,gender,age,city,state,country.
@@ -32,3 +52,4 @@ entity:-
 
 reading guest records from the file.
 getting guest labels
+==============================================================

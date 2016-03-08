@@ -17,12 +17,12 @@ public class PersonTest {
     }
     @Test
     public void test_for_person_name_prefixed_surname_last(){
-        Person person = new Person("Ram","Roy",Gender.MALE, 22,"Chennai","Tamilnaru","India");
-        assertEquals("Mr Ram Roy India",person.getInformationForMail());
+        Person person = new Person("Ram","Roy",Gender.Male, 22,"Chennai","Tamilnaru","India");
+        assertEquals("Mr Ram Roy, India",person.getInfoForMail());
     }
     @Test
     public void test_for_person_name_prefixed_surname_first(){
-        Person person = new Person("Riya","Roy",Gender.FEMALE, 22,"Chennai","Tamilnaru","India");
-        assertEquals("Ms Roy, Riya India",person.getInformationForFemail());
+        Person person = new Person("Riya","Roy",Gender.Female, 22,"Chennai","Tamilnaru","India");
+        assertEquals("Ms Roy, Riya, India",person.getInfoForFemail());
     }
 }
