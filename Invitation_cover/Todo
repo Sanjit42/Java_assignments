@@ -1,0 +1,34 @@
+Build a library that print label (representation of record ) on invitation card.
+
+given list of record in a file:
+    format :
+        firstName,lastName,gender,age,city,state,country
+
+usage:
+    Mr/Ms First LAst
+    Mr/Ms LAst First
+        prefix
+            male - Mr
+            female - Ms
+
+    -----------------------------Todo-------------------------------
+
+./ printLabel_firstLast.sh [records.txt]
+./ printLabel_lastFirst.sh [records.txt]
+
+$ cat records.txt
+    Sarojit,Das,male,23,kolkata,WB,India
+    Banti,Sarkar,female,20,barasat,WB,India
+
+$ java labelPrinter --firstLast record.txt
+    Mr Sarojit Das
+    Ms Banti Sarkar 
+$ java labelPrinter -f record.txt
+
+entity:-
+    recognising Guest as an entity:-
+        firstName,lastName,gender,age,city,state,country.
+
+
+reading guest records from the file.
+getting guest labels
