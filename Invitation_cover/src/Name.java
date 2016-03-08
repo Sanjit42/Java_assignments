@@ -14,6 +14,6 @@ public class Name {
         return firstName+ " " + lastName;
     }
     public String toLastFirstName(){
-        return lastName+ ", " +firstName;
+        return String.format("%s, %s", this.lastName, this.firstName);
     }
 }
