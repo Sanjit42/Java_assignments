@@ -1,28 +1,40 @@
 import static org.junit.Assert.*;
+
+import org.junit.Before;
 import org.junit.Test;
 
 /**
  * Created by sanjitd on 07/03/16.
  */
 public class PersonTest {
-    @Test
-    public void test_for_person_name_prefixed_name_first(){
-        Name name = new Name("Atonu", "Das");
-        assertEquals("Atonu Das", name.toFirstLastName());
+    Address address;
+    Gender male, female;
+    @Before
+    public void setUp() throws Exception {
+        address = new Address("Chennai", "Tamilnaru", "India");
+        male = Gender.Male;
+        female = Gender.Female;
     }
     @Test
-    public void test_for_person_name_prefixed_name_last(){
+    public void test_for_person_name_prefixed_name_first() {
         Name name = new Name("Atonu", "Das");
-        assertEquals("Das, Atonu", name.toLastFirstName());
+        assertEquals(name.toFirstLastName(), "Atonu Das");
     }
     @Test
-    public void test_for_person_name_prefixed_surname_last(){
-        Person person = new Person("Ram","Roy",Gender.Male, 22,"Chennai","Tamilnaru","India");
-        assertEquals("Mr Ram Roy, India",person.getInfoForMail());
+    public void test_for_person_name_prefixed_name_last() {
+        Name name = new Name("Atonu", "Das");
+        assertEquals(name.toLastFirstName(), "Das, Atonu");
+    }
+    @Test
+    public void test_for_person_name_prefixed_surname_last() {
+        Name name = new Name("Atonu", "Das");
+        Person person = new Person(name, male, 22, address);
+        assertEquals("Mr Atonu Das, India", person.getInfoForMale());
     }
     @Test
     public void test_for_person_name_prefixed_surname_first(){
-        Person person = new Person("Riya","Roy",Gender.Female, 22,"Chennai","Tamilnaru","India");
-        assertEquals("Ms Roy, Riya, India",person.getInfoForFemail());
+        Name name = new Name("Riya", "Roy");
+        Person    person = new Person(name, male, 22, address);
+        assertEquals("Mr Roy, Riya, India, 22",person.getInfoForFemaleWithAge());
     }
 }

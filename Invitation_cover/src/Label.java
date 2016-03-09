@@ -7,7 +7,8 @@ import java.io.IOException;
 /**
  * Created by sanjitd on 08/03/16.
  */
-public class Label {
+ public class Label {
+
     public static void main(String[] args) throws IOException {
         File file = new File(args[0]);
         FileReader fileReader = new FileReader(file);
@@ -17,8 +18,11 @@ public class Label {
         String[] splittedContent = content.split("\n");
         for (int i = 0; i < splittedContent.length ; i++) {
             String []eachData = splittedContent[i].split(",");
+            Address address = new Address(eachData[4], eachData[5], eachData[6]);
             int age = Integer.parseInt(eachData[3]);
-            Person person = new Person(eachData[0],eachData[1],Gender.valueOf(eachData[2]),age,eachData[4],eachData[5],eachData[6]);
+            Name name = new Name(eachData[0], eachData[1]);
+            Gender gender = Gender.valueOf(eachData[2]);
+            Person person = new Person(name,gender,age,address);
             System.out.println(person.getInfoForFemaleWithAge());
         }
     }

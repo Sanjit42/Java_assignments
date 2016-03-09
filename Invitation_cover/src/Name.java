@@ -2,18 +2,18 @@
  * Created by sanjitd on 07/03/16.
  */
 public class Name {
-    private String firstName;
-    private String lastName;
+    private static String firstName;
+    private static String lastName;
 
     public Name(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    public String toFirstLastName(){
+    public static String toFirstLastName(){
 
         return firstName+ " " + lastName;
     }
-    public String toLastFirstName(){
-        return String.format("%s, %s", this.lastName, this.firstName);
+    public static String toLastFirstName(){
+        return String.format("%s, %s", lastName, firstName);
     }
 }

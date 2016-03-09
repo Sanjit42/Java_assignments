@@ -6,11 +6,11 @@ public class Person {
     private Gender gender;
     private Name name;
     private int age;
-    public Person(String firstName, String lastName,Gender gender, int age, String city, String state, String country) {
+    public Person(Name name, Gender gender, int age, Address address) {
         this.gender = gender;
         this.age = age;
-        this.name = new Name(firstName, lastName);
-        this.address = new Address(city, state, country);
+        this.name = name;
+        this.address = address;
     }
     public String getPersonNameFirst(){
         return gender +" "+ this.name.toFirstLastName();
@@ -18,10 +18,10 @@ public class Person {
     public String getPersonNameLast(){
         return gender +" "+ this.name.toLastFirstName();
     }
-    public String getInfoForMail(){
+    public String getInfoForMale(){
         return gender +" "+ this.name.toFirstLastName()+ ", "+address.getCountry();
     }
-    public String getInfoForFemail(){
+    public String getInfoForFemale(){
         return gender +" "+ this.name.toLastFirstName()+ ", "+address.getCountry();
     }
     public String getInfoForMaleWithAge(){
