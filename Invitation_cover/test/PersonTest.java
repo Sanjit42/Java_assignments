@@ -1,7 +1,7 @@
-import static org.junit.Assert.*;
-
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * Created by sanjitd on 07/03/16.
@@ -30,6 +30,11 @@ public class PersonTest {
         Name name = new Name("Atonu", "Das");
         Person person = new Person(name, male, 22, address);
         assertEquals("Mr Atonu Das, India", person.getInfoForMale());
+    }    @Test
+    public void test_for_female_person_name_prefixed_surname_last() {
+        Name name = new Name("Anita", "Das");
+        Person person = new Person(name, female, 22, address);
+        assertEquals("Ms Das, Anita, India", person.getInfoForFemale());
     }
     @Test
     public void test_for_person_name_prefixed_surname_first(){

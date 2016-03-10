@@ -74,6 +74,18 @@ public class Matrix {
       return true;
    }
 
+   public int determinant(){
+      return getDeterminant(matrix);
+   }
+
+//   private boolean isSquare(){
+//      return this.rows == this.columns;
+//   }
+
+   private int determinantOfTwoByTwo(int [][]matrix){
+      return (matrix[0][0] * matrix[1][1]) - (matrix[0][1] * matrix[1][0]);
+   }
+
    private int [][] getCoefficentMatrix(int[][] matrix, int index){
       int rows, columns, i, j;
       rows = matrix.length-1;
@@ -99,18 +111,14 @@ public class Matrix {
       return matrix[0][0] * matrix[1][1] - matrix[1][0] * matrix[0][1];
    }
 
-   private int getDeterminant(int [][] mat){
+   private int getDeterminant(int [][] matrix){
       int i, result = 0;
-      if(mat.length == 1) return mat[0][0];
-      if(mat.length == 1) return matrix2By2(mat);
-      for (i = 0; i<columns; i++) {
-         int [][] newMatrix = getCoefficentMatrix(mat, i);
-         result += sign(i) * mat[0][i] * getDeterminant(newMatrix);
+      if(columns== 1 && rows == 1) return matrix[0][0];
+      if(columns== 2 && rows == 2) return matrix2By2(matrix);
+      for (i = 0; i<matrix.length; i++) {
+         int [][] newMatrix = getCoefficentMatrix(matrix, i);
+         result += (sign(i)) * matrix[0][i] * getDeterminant(newMatrix);
       }
       return result;
-   }
-
-   public int determinant(){
-      return getDeterminant(matrix);
    }
 }

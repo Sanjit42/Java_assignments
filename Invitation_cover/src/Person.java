@@ -1,6 +1,3 @@
-/**
- * Created by sanjitd on 07/03/16.
- */
 public class Person {
     private Address address;
     private Gender gender;
@@ -22,6 +19,7 @@ public class Person {
         return gender +" "+ this.name.toFirstLastName()+ ", "+address.getCountry();
     }
     public String getInfoForFemale(){
+
         return gender +" "+ this.name.toLastFirstName()+ ", "+address.getCountry();
     }
     public String getInfoForMaleWithAge(){

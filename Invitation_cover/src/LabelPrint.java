@@ -1,8 +1,22 @@
-/**
- * Created by sanjitd on 08/03/16.
- */
-public class LabelPrint extends Label {
-    public static void main(String[] args) {
-        Label label = new Label();
+public class LabelPrint {
+    private String arg;
+    private Person person;
+
+    public LabelPrint(String content) {
+        this.arg = content;
+    }
+
+    public Person operateData() {
+        String s = new String(String.valueOf(arg));
+        String[] splittedContent = s.split("\n");
+        for (int i = 0; i < splittedContent.length; i++) {
+            String[] eachData = splittedContent[i].split(",");
+            Address address = new Address(eachData[4], eachData[5], eachData[6]);
+            int age = Integer.parseInt(eachData[3]);
+            Name name = new Name(eachData[0], eachData[1]);
+            Gender gender = Gender.valueOf(eachData[2]);
+            person = new Person(name, gender, age, address);
+        }
+        return person;
     }
 }

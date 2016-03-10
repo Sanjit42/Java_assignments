@@ -10,6 +10,12 @@ public class MyHashTableTest {
         assertEquals(1, myHashTable.getLength());
     }
     @Test
+    public void testhash_should_give_the_hashcode(){
+        MyHashTable myHashTable = new MyHashTable(2);
+        assertEquals(1,myHashTable.hash("6"));
+        assertEquals(1,myHashTable.hash("b"));
+    };
+    @Test
     public void testget_should_get_value_from_the_table_if_give_key () {
         MyHashTable myHashTable = new MyHashTable(3);
         myHashTable.put("India", "Delhi");

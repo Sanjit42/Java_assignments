@@ -99,12 +99,22 @@ public class MatrixTest{
    }
 
    @Test
+   public void determinant_provides_the_determinant_of_a_2_by_2_matrix(){
+      int [] value = {1,2,3,4};
+      Matrix matrix = Matrix.createMatrix(2, 2, value);
+      int determinant = matrix.determinant();
+
+      int expected = -2;
+      assertEquals(expected, determinant);
+   }
+
+   @Test
    public void determinant_provides_the_determinant_of_a_3_by_3_matrix(){
       int [] value = {1,2,3,4,5,6,7,8,9};
       Matrix matrix = Matrix.createMatrix(3, 3, value);
       int determinant = matrix.determinant();
 
-      int expected = -48;
+      int expected = -0;
       assertEquals(expected, determinant);
    }
 }

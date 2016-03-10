@@ -52,4 +52,5 @@ entity:-
 
 reading guest records from the file.
 getting guest labels
-==============================================================
+=============================================================
+path --nameFormat firstLast --countryName India -- AgeFormat 24 fileName.
