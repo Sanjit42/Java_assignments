@@ -9,23 +9,22 @@ public class Person {
         this.name = name;
         this.address = address;
     }
-    public String getPersonNameFirst(){
-        return gender +" "+ this.name.toFirstLastName();
+    public String getFormalInfo(){
+        return gender + " " +this.name.toFirstLastName();
     }
-    public String getPersonNameLast(){
-        return gender +" "+ this.name.toLastFirstName();
+    public String getInformalInfo(){
+        return gender + " " +this.name.toLastFirstName();
     }
-    public String getInfoForMale(){
+    public String getFormalInfoWithCountry(){
         return gender +" "+ this.name.toFirstLastName()+ ", "+address.getCountry();
     }
-    public String getInfoForFemale(){
-
+    public String getInformalInfoWithCountry(){
         return gender +" "+ this.name.toLastFirstName()+ ", "+address.getCountry();
     }
-    public String getInfoForMaleWithAge(){
-        return gender +" "+ this.name.toFirstLastName()+ " "+address.getCountry()+ ", " + this.age;
+    public String getFormalInfoWithCountryAndAge(){
+        return gender +" "+ this.name.toFirstLastName()+ ", "+address.getCountry()+ ", " + this.age;
     }
-    public String getInfoForFemaleWithAge(){
+    public String getInformalInfoWithCountryAndAge(){
         return gender +" "+ this.name.toLastFirstName()+ ", "+address.getCountry()+ ", " + this.age;
     }
 }

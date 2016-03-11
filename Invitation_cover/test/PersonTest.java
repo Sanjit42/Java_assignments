@@ -3,9 +3,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by sanjitd on 07/03/16.
- */
 public class PersonTest {
     Address address;
     Gender male, female;
@@ -16,30 +13,37 @@ public class PersonTest {
         female = Gender.Female;
     }
     @Test
-    public void test_for_person_name_prefixed_name_first() {
+    public void testPerson_should_give_formal_info_of_a_person() {
         Name name = new Name("Atonu", "Das");
-        assertEquals(name.toFirstLastName(), "Atonu Das");
+        Person person = new Person(name,male,23, address);
+        assertEquals(person.getFormalInfo(), "Mr Atonu Das");
     }
     @Test
-    public void test_for_person_name_prefixed_name_last() {
-        Name name = new Name("Atonu", "Das");
-        assertEquals(name.toLastFirstName(), "Das, Atonu");
+    public void testPerson_should_give_informal_info_of_a_person() {
+        Name name = new Name("Amrita", "Sinha");
+        Person person = new Person(name,female,23, address);
+        assertEquals(person.getInformalInfo(), "Ms Sinha, Amrita");
     }
     @Test
-    public void test_for_person_name_prefixed_surname_last() {
-        Name name = new Name("Atonu", "Das");
-        Person person = new Person(name, male, 22, address);
-        assertEquals("Mr Atonu Das, India", person.getInfoForMale());
-    }    @Test
-    public void test_for_female_person_name_prefixed_surname_last() {
-        Name name = new Name("Anita", "Das");
+    public void testPerson_should_give_informal_info_of_a_person_with_country_name() {
+        Name name = new Name("Rahi", "Biswas");
         Person person = new Person(name, female, 22, address);
-        assertEquals("Ms Das, Anita, India", person.getInfoForFemale());
+        assertEquals("Ms Rahi Biswas, India", person.getFormalInfoWithCountry());
+    } @Test
+    public void testPerson_should_give_formal_info_of_a_person_with_country_name() {
+        Name name = new Name("Abhijit", "Raha");
+        Person person = new Person(name, male, 24, address);
+        assertEquals("Mr Abhijit Raha, India", person.getFormalInfoWithCountry());
     }
     @Test
-    public void test_for_person_name_prefixed_surname_first(){
+    public void testPerson_should_give_informal_info_of_a_person_with_country_name_and_age(){
         Name name = new Name("Riya", "Roy");
-        Person    person = new Person(name, male, 22, address);
-        assertEquals("Mr Roy, Riya, India, 22",person.getInfoForFemaleWithAge());
+        Person    person = new Person(name, female, 22, address);
+        assertEquals("Ms Roy, Riya, India, 22",person.getInformalInfoWithCountryAndAge());
+    }    @Test
+    public void testPerson_should_give_formal_info_of_a_person_with_country_name_and_age(){
+        Name name = new Name("Riya", "Roy");
+        Person    person = new Person(name, female, 22, address);
+        assertEquals("Ms Riya Roy, India, 22",person.getFormalInfoWithCountryAndAge());
     }
 }

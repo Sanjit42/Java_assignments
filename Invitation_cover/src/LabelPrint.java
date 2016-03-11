@@ -7,8 +7,7 @@ public class LabelPrint {
     }
 
     public Person operateData() {
-        String s = new String(String.valueOf(arg));
-        String[] splittedContent = s.split("\n");
+        String[] splittedContent = arg.split("\n");
         for (int i = 0; i < splittedContent.length; i++) {
             String[] eachData = splittedContent[i].split(",");
             Address address = new Address(eachData[4], eachData[5], eachData[6]);
