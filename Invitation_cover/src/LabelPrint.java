@@ -1,21 +1,22 @@
-public class LabelPrint {
-    private String arg;
-    private Person person;
+import java.util.ArrayList;
 
-    public LabelPrint(String content) {
-        this.arg = content;
+public class LabelPrint {
+    private String [] content;
+    public LabelPrint(String[] contents) {
+        this.content = contents;
     }
 
-    public Person operateData() {
-        String[] splittedContent = arg.split("\n");
-        for (int i = 0; i < splittedContent.length; i++) {
-            String[] eachData = splittedContent[i].split(",");
+    public ArrayList<Person> operateData() {
+         ArrayList<Person> guestList = new ArrayList<>();
+        for (int i = 0; i <content.length; i++) {
+            String[] eachData = content[i].split(",");
             Address address = new Address(eachData[4], eachData[5], eachData[6]);
             int age = Integer.parseInt(eachData[3]);
             Name name = new Name(eachData[0], eachData[1]);
             Gender gender = Gender.valueOf(eachData[2]);
-            person = new Person(name, gender, age, address);
+            Person person = new Person(name, gender, age, address);
+            guestList.add(person);
         }
-        return person;
+        return guestList;
     }
 }

@@ -10,21 +10,19 @@ public class Person {
         this.address = address;
     }
     public String getFormalInfo(){
-        return gender + " " +this.name.toFirstLastName();
+        return gender + " " + name.toFirstLastName();
     }
     public String getInformalInfo(){
-        return gender + " " +this.name.toLastFirstName();
+        return gender + " " + name.toLastFirstName();
     }
     public String getFormalInfoWithCountry(){
-        return gender +" "+ this.name.toFirstLastName()+ ", "+address.getCountry();
+        return gender +" "+ name.toFirstLastName()+ ", "+address.getCountry();
     }
-    public String getInformalInfoWithCountry(){
-        return gender +" "+ this.name.toLastFirstName()+ ", "+address.getCountry();
-    }
+
     public String getFormalInfoWithCountryAndAge(){
-        return gender +" "+ this.name.toFirstLastName()+ ", "+address.getCountry()+ ", " + this.age;
+        return gender +" "+ name.toFirstLastName()+ ", "+address.getCountry()+ ", " + this.age;
     }
     public String getInformalInfoWithCountryAndAge(){
-        return gender +" "+ this.name.toLastFirstName()+ ", "+address.getCountry()+ ", " + this.age;
+        return gender +" "+ name.toLastFirstName()+ ", "+address.getCountry()+ ", " + this.age;
     }
 }

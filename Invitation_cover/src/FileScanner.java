@@ -3,9 +3,6 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-/**
- * Created by sanjitd on 09/03/16.
- */
 public class FileScanner {
 
     private String[] arg;
@@ -13,7 +10,7 @@ public class FileScanner {
     public FileScanner(String[] arg) {
         this.arg = arg;
     }
-    public String read(){
+    public String[] read(){
         File file = new File(arg[arg.length - 1]);
         char [] data = new char[(int) file.length()];
         try {
@@ -27,6 +24,6 @@ public class FileScanner {
             e.printStackTrace();
         }
         String records = new String(data);
-        return  records;
+        return  records.split("\n");
     }
 }

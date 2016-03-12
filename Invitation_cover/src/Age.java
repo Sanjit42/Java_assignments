@@ -5,6 +5,4 @@ public class Age {
     public Age(int age) {
         this.age = age;
     }
-
-
 }
